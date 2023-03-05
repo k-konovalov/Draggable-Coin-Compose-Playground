@@ -3,7 +3,6 @@ package com.konovalov.draggable.coin.view.compose
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
@@ -21,14 +20,14 @@ class ComposeFragment : Fragment() {
         savedInstanceState: Bundle?
     ) = ComposeView(requireContext()).apply {
         setContent {
-            ComposeFragmentHolder()
+            composeFragmentHolder()
         }
     }
 }
 
 @Preview
 @Composable
-fun ComposeFragmentHolder() =
+fun composeFragmentHolder() =
     DraggableScaredViewTheme {
         Surface(
             modifier = Modifier.fillMaxSize(),
