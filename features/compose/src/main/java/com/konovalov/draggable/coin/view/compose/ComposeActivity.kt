@@ -1,4 +1,4 @@
-package com.konovalov.draggable.coin.view
+package com.konovalov.draggable.coin.view.compose
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

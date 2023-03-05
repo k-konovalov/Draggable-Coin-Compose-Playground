@@ -13,4 +13,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Draggable Coin View"
-include ':app'
+include ':app',
+        ':features:compose',
+        ':features:xml'

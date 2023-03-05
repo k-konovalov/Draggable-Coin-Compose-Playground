@@ -1,4 +1,4 @@
-package com.konovalov.draggable.coin.view
+package com.konovalov.draggable.coin.view.xml
 
 import androidx.fragment.app.Fragment
 
