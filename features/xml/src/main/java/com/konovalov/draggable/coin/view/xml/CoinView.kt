@@ -13,10 +13,11 @@ import androidx.core.graphics.drawable.toBitmap
 import androidx.core.view.children
 import androidx.core.view.get
 import androidx.recyclerview.widget.RecyclerView
+import com.konovalov.draggable.coin.view.core.ui.R as coreUi
 
 class CoinView(context: Context, attrs: AttributeSet) : RecyclerView(context, attrs) {
 
-    val coin by lazy { AppCompatResources.getDrawable(context, R.drawable.coin)!! }
+    val coin by lazy { AppCompatResources.getDrawable(context, coreUi.drawable.coin)!! }
     val coinBitmap by lazy { coin.toBitmap() }
 
     val touchListener = RvTouchEventProvider(context, this)
