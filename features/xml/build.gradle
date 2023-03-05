@@ -1,4 +1,5 @@
 apply from: "$rootDir/core/common-build.gradle"
+apply plugin: 'org.jetbrains.kotlin.android'
 
 android {
     namespace 'com.konovalov.draggable.coin.view.xml'
@@ -16,4 +17,5 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.4.1'
     implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
+    implementation 'androidx.core:core-ktx:+'
 }

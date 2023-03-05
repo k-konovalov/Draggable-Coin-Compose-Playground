@@ -1,4 +1,5 @@
 apply from: "$rootDir/core/common-build.gradle"
+apply plugin: 'org.jetbrains.kotlin.android'
 
 android {
     namespace 'com.konovalov.draggable.coin.view.compose'
@@ -14,6 +15,7 @@ android {
 
 
 dependencies {
+    implementation project(':core:ui')
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
 
@@ -21,6 +23,7 @@ dependencies {
     implementation "androidx.compose.ui:ui:$compose_ui_version"
     implementation "androidx.compose.ui:ui-tooling-preview:$compose_ui_version"
     implementation 'androidx.compose.material:material:1.2.0'
+    implementation 'androidx.core:core-ktx:+'
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_ui_version"
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_ui_version"
 }

@@ -1,10 +1,14 @@
-package com.konovalov.draggable.coin.view.ui.theme
+package com.konovalov.draggable.coin.view.core.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
+import com.konovalov.draggable.coin.view.core.ui.theme.Purple200
+import com.konovalov.draggable.coin.view.core.ui.theme.Purple500
+import com.konovalov.draggable.coin.view.core.ui.theme.Purple700
+import com.konovalov.draggable.coin.view.core.ui.theme.Teal200
 
 private val DarkColorPalette = darkColors(
     primary = Purple200,

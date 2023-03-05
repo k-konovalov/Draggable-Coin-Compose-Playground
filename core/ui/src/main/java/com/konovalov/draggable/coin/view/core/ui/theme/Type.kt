@@ -1,4 +1,4 @@
-package com.konovalov.draggable.coin.view.ui.theme
+package com.konovalov.draggable.coin.view.core.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
