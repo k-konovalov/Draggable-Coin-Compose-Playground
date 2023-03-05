@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.compose.ui.platform.ComposeView
 import androidx.navigation.fragment.findNavController
 import com.konovalov.draggable.coin.view.databinding.FragmentSecondBinding
 
@@ -23,6 +24,14 @@ class SecondFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        return DraggableScaredViewTheme {
+            ComposeView(requireContext()).apply {
+                setContent {
+                    Text(text = "Hello world.")
+                }
+            }
+        }
 
         _binding = FragmentSecondBinding.inflate(inflater, container, false)
         return binding.root
