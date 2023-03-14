@@ -20,20 +20,17 @@ class ComposeFragment : Fragment() {
         savedInstanceState: Bundle?
     ) = ComposeView(requireContext()).apply {
         setContent {
-            composeFragmentHolder()
+            DraggableScaredViewTheme {
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colors.background
+                ) {
+                    Greeting("Android")
+                    Text(text = "Hello world.")
+                }
+            }
         }
     }
 }
 
-@Preview
-@Composable
-fun composeFragmentHolder() =
-    DraggableScaredViewTheme {
-        Surface(
-            modifier = Modifier.fillMaxSize(),
-            color = MaterialTheme.colors.background
-        ) {
-            Greeting("Android")
-            Text(text = "Hello world.")
-        }
-    }
+
