@@ -25,4 +25,6 @@ dependencies {
     implementation 'androidx.compose.material:material:1.2.0'
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_ui_version"
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_ui_version"
+
+    implementation "com.google.accompanist:accompanist-themeadapter-appcompat:+"
 }
