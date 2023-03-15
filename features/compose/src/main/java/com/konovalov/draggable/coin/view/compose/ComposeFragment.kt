@@ -8,10 +8,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ComposeView
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.platform.ViewCompositionStrategy
 import com.konovalov.draggable.coin.view.core.ui.theme.DraggableScaredViewTheme
 
 class ComposeFragment : Fragment() {
@@ -20,6 +19,9 @@ class ComposeFragment : Fragment() {
         savedInstanceState: Bundle?
     ) = ComposeView(requireContext()).apply {
         setContent {
+            setViewCompositionStrategy(
+                ViewCompositionStrategy.DisposeOnLifecycleDestroyed(viewLifecycleOwner)
+            )
             DraggableScaredViewTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
