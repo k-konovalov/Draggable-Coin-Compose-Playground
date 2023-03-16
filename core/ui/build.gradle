@@ -6,9 +6,10 @@ android {
 }
 
 dependencies {
-    implementation 'com.google.android.material:material:1.8.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
-
-    implementation "androidx.compose.ui:ui:$compose_ui_version"
-    implementation 'androidx.compose.material:material:1.2.0'
+    implementation (
+            deps.androidx.constraint_layout,
+            deps.androidx.material,
+            deps.compose.material,
+            deps.compose.ui,
+    )
 }

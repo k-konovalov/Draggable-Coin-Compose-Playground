@@ -7,7 +7,7 @@ versions.card_view = '1.0.0'
 versions.activity = '1.6.1'
 versions.fragment = '1.5.1'
 versions.recycler_view = '1.2.1'
-versions.material = '1.6.1'
+versions.material = '1.8.0'
 versions.constraint_layout = '2.1.4'
 versions.preference = '1.2.0'
 versions.preferences_datastore = '1.0.0'
@@ -50,5 +50,6 @@ compose.ui_tooling = "androidx.compose.ui:ui-tooling:$versions.compose"
 compose.activity = "androidx.activity:activity-compose:$versions.compose"
 compose.test_manifest = "androidx.compose.ui:ui-test-manifest:$versions.compose"
 compose.accompanist_themeadapter_appcompat = "com.google.accompanist:accompanist-themeadapter-appcompat:+"
+compose.ui = "androidx.compose.ui:ui:$versions.compose"
 
 deps.compose = compose

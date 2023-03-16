@@ -10,7 +10,8 @@ android {
 }
 
 dependencies {
-    implementation project(':core:ui')
-
-    implementation 'com.google.android.material:material:1.8.0'
+    implementation (
+            project(':core:ui'),
+            deps.compose.material
+    )
 }
