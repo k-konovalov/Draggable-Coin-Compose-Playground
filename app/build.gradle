@@ -42,6 +42,7 @@ dependencies {
             deps.androidx.constraint_layout,
             deps.androidx.lifecycle_runtime_ktx,
             deps.androidx.navigation_ui_ktx,
+            deps.androidx.navigation_fragment_ktx,
             deps.compose.activity,
     )
 }
